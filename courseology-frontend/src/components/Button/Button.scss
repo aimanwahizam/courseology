@@ -1,9 +1,9 @@
 @use "../../assets/sass/variables" as *;
 
 .button {
-    margin-top: 2rem;
     background-color: $color-grey;
     border: none;
+    margin-bottom: 2rem;
     
     &__text {
         color: $color-main;

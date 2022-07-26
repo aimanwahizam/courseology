@@ -7,9 +7,11 @@
     width: 100%;
     position: absolute;
     top: 0;
+
     &__name {
         margin-left: 0.5rem;
         padding: 0.4rem;
         color: $color-white;
+        font-family: $font-main;
     }
 }

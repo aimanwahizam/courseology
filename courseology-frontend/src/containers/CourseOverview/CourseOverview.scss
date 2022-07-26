@@ -1,0 +1,34 @@
+@use "../../assets/sass/variables" as *;
+@use "../../assets/sass/mixins" as *;
+
+.course-overview {
+    margin-top: 2rem;
+    @include flexColumnCenter;
+    color: $color-main;
+
+    &__title {
+        font-size: $font-big;
+        font-family: $font-main;
+    }
+
+    &__content {
+        background-color: $color-grey;
+        width: 80%;
+        @include flexColumnCenter;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+    }
+
+    &__information {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-left: 1rem;
+        font-size: $font-medium;
+
+        &--entry {
+            position: relative;
+            top: 1rem;
+        }
+    }
+}
