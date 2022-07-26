@@ -2,20 +2,20 @@
 @use "../../assets/sass/mixins" as *;
 
 .courses {
-    margin-top: 2rem;
+  margin-top: 2rem;
+  @include flexColumnCenter;
+
+  &__top {
+    width: 75%;
     @include flexColumnCenter;
+  }
 
-    &__top {
-        width: 75%;
-        @include flexColumnCenter;
-    }
+  &__title {
+    color: $color-main;
+  }
 
-    &__title {
-        color: $color-main;
-    }
-
-    &__search-bar {
-        height: 2rem;
-        width: 20rem;
-    }
+  &__search-bar {
+    height: 2rem;
+    width: 20rem;
+  }
 }
