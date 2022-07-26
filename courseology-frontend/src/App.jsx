@@ -1,8 +1,9 @@
 import './App.scss';
+import Courses from './containers/Courses/Courses';
 
 function App() {
   return (
-    <h1>Yo</h1>
+    <Courses />
   );
 }
 

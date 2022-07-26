@@ -1,0 +1,13 @@
+@use "../../assets/sass/variables" as *;
+
+.header {
+    background-color: $color-main;
+    display: flex;
+    justify-content: flex-start;
+
+    &__name {
+        margin-left: 0.5rem;
+        padding: 0.4rem;
+        color: $color-white;
+    }
+}
