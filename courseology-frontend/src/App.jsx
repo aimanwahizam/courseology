@@ -1,9 +1,13 @@
-import './App.scss';
-import Courses from './containers/Courses/Courses';
+import "./App.scss";
+import Courses from "./containers/Courses/Courses";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <Courses />
+    <>
+      <Header />
+      <Courses />
+    </>
   );
 }
 

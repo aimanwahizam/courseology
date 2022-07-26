@@ -15,4 +15,12 @@ public class CourseService {
     public List<Course> findAllCourses() {
         return courseRepository.findAll();
     }
+
+    public Course findCourseById(String id) {
+        Course course = courseRepository.findByid(id);
+        if (course == null) {
+            throw new CourseNotFoundException();
+        }
+        return course;
+    }
 }
