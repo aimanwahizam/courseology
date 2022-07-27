@@ -3,7 +3,10 @@ import "./CoursesCard.scss";
 
 const CoursesCard = () => {
   return (
-    <div>CoursesCard</div>
+    <div className='card'>
+        <h2 className='card__title'>Title</h2>
+        <h3></h3>
+    </div>
   )
 }
 

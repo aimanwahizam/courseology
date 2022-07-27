@@ -4,18 +4,26 @@
 .home-page {
   margin-top: 2rem;
   @include flexColumnCenter;
+  font-family: $font-main;
+  color: $color-main;
 
   &__top {
     width: 75%;
     @include flexColumnCenter;
   }
 
-  &__title {
-    color: $color-main;
-  }
-
   &__search-bar {
     height: 2rem;
     width: 20rem;
+  }
+
+  &__subheading {
+    width: 90vw;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 22.5vw);
+    gap: 1rem;
   }
 }

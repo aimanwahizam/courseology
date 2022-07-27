@@ -1,5 +1,6 @@
 import React from "react";
 import "./HomePage.scss";
+import CoursesCard from "../../components/CoursesCard/CoursesCard";
 
 const HomePage = ({courses}) => {
   return (
@@ -10,7 +11,12 @@ const HomePage = ({courses}) => {
       </div>
       <div className="home-page__bottom">
         <h2 className="home-page__subheading">Course Results...</h2>
-        <div className="home-page__grid"></div>
+        <div className="home-page__grid">
+          <CoursesCard />
+          <CoursesCard />
+          <CoursesCard />
+          <CoursesCard />
+        </div>
       </div>
     </div>
   );

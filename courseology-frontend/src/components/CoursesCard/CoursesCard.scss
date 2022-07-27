@@ -1,0 +1,14 @@
+@use "../../assets/sass/variables" as *;
+@use "../../assets/sass/mixins" as *;
+
+.card {
+    background-color: $color-grey;
+    @include flexColumnCenter;
+    height: 10rem;
+    color: $color-main;
+    font-family: $font-main;
+
+    &__title {
+        
+    }
+}
