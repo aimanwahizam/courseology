@@ -1,13 +1,14 @@
-import React from 'react';
+import React from "react";
 import "./CoursesCard.scss";
 
-const CoursesCard = () => {
+const CoursesCard = ({title, category, author}) => {
   return (
-    <div className='card'>
-        <h2 className='card__title'>Title</h2>
-        <h3></h3>
+    <div className="card">
+      <h2 className="card__text card__text--title">{title}</h2>
+      <h3 className="card__text">{category}</h3>
+      <h4 className="card__text card__text--author">{author}</h4>
     </div>
-  )
-}
+  );
+};
 
-export default CoursesCard
+export default CoursesCard;

@@ -12,10 +12,10 @@ const HomePage = ({courses}) => {
       <div className="home-page__bottom">
         <h2 className="home-page__subheading">Course Results...</h2>
         <div className="home-page__grid">
-          <CoursesCard />
-          <CoursesCard />
-          <CoursesCard />
-          <CoursesCard />
+          <CoursesCard title="title" category="category" author="author"/>
+          <CoursesCard title="title" category="category" author="author" />
+          <CoursesCard title="title" category="category" author="author" />
+          <CoursesCard title="title" category="category" author="author" />
         </div>
       </div>
     </div>

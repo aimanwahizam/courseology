@@ -2,13 +2,21 @@
 @use "../../assets/sass/mixins" as *;
 
 .card {
-    background-color: $color-grey;
-    @include flexColumnCenter;
-    height: 10rem;
-    color: $color-main;
-    font-family: $font-main;
+  background-color: $color-grey;
+  @include flexColumnCenter;
+  color: $color-main;
+  font-family: $font-main;
 
-    &__title {
-        
+  &__text {
+    height: 0.5rem;
+
+    &--title {
+      text-decoration: underline;
     }
+
+    &--author {
+      position: relative;
+      top: -0.5rem;
+    }
+  }
 }
