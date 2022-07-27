@@ -1,8 +1,8 @@
 import React from "react";
 import "./HomePage.scss";
-import CoursesCard from "../../components/CoursesCard/CoursesCard";
+import CoursesList from "../CoursesList/CoursesList";
 
-const HomePage = ({courses}) => {
+const HomePage = ({ coursesData }) => {
   return (
     <div className="home-page">
       <div className="home-page__top">
@@ -11,12 +11,7 @@ const HomePage = ({courses}) => {
       </div>
       <div className="home-page__bottom">
         <h2 className="home-page__subheading">Course Results...</h2>
-        <div className="home-page__grid">
-          <CoursesCard title="title" category="category" author="author"/>
-          <CoursesCard title="title" category="category" author="author" />
-          <CoursesCard title="title" category="category" author="author" />
-          <CoursesCard title="title" category="category" author="author" />
-        </div>
+        {coursesData && <CoursesList coursesData={coursesData} />}
       </div>
     </div>
   );

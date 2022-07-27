@@ -1,10 +1,19 @@
-import React from 'react';
+import React from "react";
 import "./CoursesList.scss";
+import CoursesCard from "../../components/CoursesCard/CoursesCard";
 
-const CoursesList = () => {
-  return (
-    <div>CoursesList</div>
-  )
-}
+const CoursesList = ({ coursesData }) => {
+  const coursesJSX = coursesData.map((course) => {
+    return (
+      <CoursesCard
+        name={course.name}
+        category={course.category}
+        author={course.author}
+      />
+    );
+  });
 
-export default CoursesList
+  return <div className="courses-list">{coursesJSX}</div>;
+};
+
+export default CoursesList;

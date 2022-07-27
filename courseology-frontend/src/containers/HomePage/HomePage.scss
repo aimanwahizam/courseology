@@ -20,10 +20,4 @@
   &__subheading {
     width: 90vw;
   }
-
-  &__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 22.5vw);
-    gap: 1rem;
-  }
 }

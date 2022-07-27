@@ -7,22 +7,22 @@ import HomePage from "../HomePage/HomePage";
 const Dashboard = () => {
   const [coursesData, setCoursesData] = useState([]);
 
-    const getCoursesData = async () => {
-        let url = "http://localhost:8080/courses";
-        const response = await fetch(url);
-        const data = response.json();
-        setCoursesData(data);
-    }
+  const getCoursesData = async () => {
+    let url = "http://localhost:8080/courses";
+    const response = await fetch(url);
+    const data = await response.json();
+    setCoursesData(data);
+  };
 
-    useEffect(() => {
-        getCoursesData();
-    }, [])
+  useEffect(() => {
+    getCoursesData();
+  }, []);
 
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<HomePage courses={coursesData}/>} />
+        <Route path="/" element={<HomePage coursesData={coursesData} />} />
       </Routes>
     </Router>
   );
