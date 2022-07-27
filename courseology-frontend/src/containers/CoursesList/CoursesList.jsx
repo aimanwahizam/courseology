@@ -3,12 +3,13 @@ import "./CoursesList.scss";
 import CoursesCard from "../../components/CoursesCard/CoursesCard";
 
 const CoursesList = ({ coursesData }) => {
-  const coursesJSX = coursesData.map((course) => {
+  const coursesJSX = coursesData.map((course, index) => {
     return (
       <CoursesCard
         name={course.name}
         category={course.category}
         author={course.author}
+        key={index}
       />
     );
   });
