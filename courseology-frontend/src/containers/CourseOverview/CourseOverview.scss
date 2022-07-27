@@ -29,6 +29,9 @@
         &--entry {
             position: relative;
             top: 1rem;
+            text-align: justify;
+            text-justify: inter-word;
+            margin-right: 1rem;
         }
     }
 }
