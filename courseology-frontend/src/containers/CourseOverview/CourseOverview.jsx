@@ -45,7 +45,10 @@ const CourseOverview = ({
           </h3>
         </div>
       </div>
-      <Button buttonText="Back to Search" />
+      <Button
+        buttonText="Back to Search"
+        clickFunction="window.location.href='http://localhost:3000/'"
+      />
     </div>
   );
 };
