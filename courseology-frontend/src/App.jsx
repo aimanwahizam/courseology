@@ -1,13 +1,12 @@
 import "./App.scss";
 // import CourseOverview from "./containers/CourseOverview/CourseOverview";
-import HomePage from "./containers/HomePage/HomePage";
-import Header from "./components/Header/Header";
+
+import Dashboard from "./containers/Dashboard/Dashboard";
 
 function App() {
   return (
     <>
-      <Header />
-      <HomePage />
+      <Dashboard />
       {/* <CourseOverview
         name="Nology Web Development"
         category="How to Get Good"
