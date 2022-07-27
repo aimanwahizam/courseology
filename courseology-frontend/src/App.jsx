@@ -1,6 +1,5 @@
 import "./App.scss";
 // import CourseOverview from "./containers/CourseOverview/CourseOverview";
-
 import Dashboard from "./containers/Dashboard/Dashboard";
 
 function App() {

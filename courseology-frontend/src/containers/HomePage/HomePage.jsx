@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomePage.scss";
 
-const HomePage = () => {
+const HomePage = ({courses}) => {
   return (
     <div className="home-page">
       <div className="home-page__top">
