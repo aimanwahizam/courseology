@@ -2,7 +2,7 @@
 @use "../../assets/sass/mixins" as *;
 
 .courses-list {
-    display: grid;
-    grid-template-columns: repeat(4, 22.5vw);
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 22.5vw);
+  gap: 1rem;
 }

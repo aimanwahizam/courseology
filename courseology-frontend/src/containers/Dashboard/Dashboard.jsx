@@ -3,6 +3,7 @@ import "./Dashboard.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import HomePage from "../HomePage/HomePage";
+import CourseOverview from "../CourseOverview/CourseOverview";
 
 const Dashboard = () => {
   const [coursesData, setCoursesData] = useState([]);
@@ -44,6 +45,7 @@ const Dashboard = () => {
             />
           }
         />
+        <Route path="/courses/:courseID" element={<CourseOverview coursesData={searchResultArray} />}/>
       </Routes>
     </Router>
   );

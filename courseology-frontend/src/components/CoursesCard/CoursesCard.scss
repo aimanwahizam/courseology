@@ -7,6 +7,10 @@
   color: $color-main;
   font-family: $font-main;
 
+  &__link {
+    text-decoration: none;
+  }
+
   &__text {
     height: 0.5rem;
 

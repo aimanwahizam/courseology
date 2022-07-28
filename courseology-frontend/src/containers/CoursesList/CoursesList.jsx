@@ -9,6 +9,7 @@ const CoursesList = ({ coursesData }) => {
         name={course.name}
         category={course.category}
         author={course.author}
+        id={course.id}
         key={index}
       />
     );
