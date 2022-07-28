@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./CourseOverview.scss";
 import Button from "../../components/Button/Button";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 const CourseOverview = () => {
   const [dataSet, setDataSet] = useState({});
@@ -54,10 +56,11 @@ const CourseOverview = () => {
           </h3>
         </div>
       </div>
+      <Link to={"/"}>
       <Button
         buttonText="Back to Search"
-        clickFunction="window.location.href='http://localhost:3000/courses'"
       />
+      </Link>
     </div>
   );
 };
